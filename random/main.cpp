@@ -16,6 +16,8 @@ int main(void)
         Sleep( ( ( time(NULL) + clock()*5 ) )%10 );
     }
     
+    cout << "Done." << endl;
+    
     //¦^¶Ç²×¤î
     return 0;
 }
