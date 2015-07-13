@@ -1,4 +1,4 @@
-//Chapter 1 - advanced loop
+//Chapter 3 - advanced loop
 #include <iostream>
 using namespace std;
  
