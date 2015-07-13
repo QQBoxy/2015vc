@@ -10,13 +10,15 @@ int main(void)
     //寫一支駭客程式?
     system("color A");
     system("title Hack System");
-    
+
     while(1) {
         cerr << rand()%2;
-        Sleep( ( ( time(NULL) + clock()*5 ) )%10 );
+        Sleep( ( time(NULL) + clock()*5 )%10 );
     }
-    
+
     cout << "Done." << endl;
+
+    system("pause");
     
     //回傳終止
     return 0;

@@ -1,7 +1,7 @@
 //Chapter 1 - datatype
 #include <iostream>
 using namespace std;
- 
+
 int main(void)
 {
     //¸ê®Æ«¬ºA
