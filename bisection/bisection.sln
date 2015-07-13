@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bisection", "bisection.vcxproj", "{2BA20038-DB71-4B0E-8DE9-6A61228D5EA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BA20038-DB71-4B0E-8DE9-6A61228D5EA5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2BA20038-DB71-4B0E-8DE9-6A61228D5EA5}.Debug|Win32.Build.0 = Debug|Win32
+		{2BA20038-DB71-4B0E-8DE9-6A61228D5EA5}.Release|Win32.ActiveCfg = Release|Win32
+		{2BA20038-DB71-4B0E-8DE9-6A61228D5EA5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
