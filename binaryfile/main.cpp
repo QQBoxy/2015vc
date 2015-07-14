@@ -1,30 +1,28 @@
 #include <iostream>
 #include <fstream> //ofstream、ifstream
 #include <string>
- 
 using namespace std;
 
-int main(void)
-{
+int main(void) {
     int i = 0, j = 0;
     int mode = 0;
     int number = 0;
     const char *filePath = "number.binary";
     unsigned long ulcount = 10; //10筆資料
-
+    
     ofstream outputFile;
     ifstream inputFile;
-
+    
     FILE *writeFile;
     FILE *readFile;
     char header[81];
-
+    
     while(1) {
         cout << "[1]C++ write\n[2]C++ read\n[3]C write\n[4]C read\n[0]Exit\nInput Number:";
         cin >> mode;
-
+        
         if(mode == 0) break; //跳出迴圈
-
+        
         switch(mode) {
             case 1: //VC++ Write File
                 outputFile.open(filePath, ios::trunc | ios::binary);
@@ -60,7 +58,7 @@ int main(void)
                 if(writeFile) { //Check File
                     fseek(writeFile, 80, SEEK_SET); //跳過標頭80個字元 //UINT8
                     fwrite(&ulcount, 4, 1, writeFile); //讀取數量 //UINT32
-                    for(i=1;i<10;i++) {
+                    for(i=0;i<10;i++) {
                         fwrite(&i, 4, 1, writeFile);
                     }
                     fclose(writeFile);
@@ -88,7 +86,7 @@ int main(void)
                 break;
         }
     }
-
+    
     cout << "Exit" << endl;
     system("pause");
     return 0;

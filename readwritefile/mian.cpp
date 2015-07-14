@@ -9,21 +9,21 @@ int main(void)
     int i = 0, j = 0;
     int mode = 0;
     const char *filePath = "math.xls";
-
+    
     ofstream outputFile;
     ifstream inputFile;
     string lines = "";
-
+    
     FILE *writeFile;
     FILE *readFile;
     char line[100] = "";
-
+    
     while(1) {
         cout << "[1]C++ write\n[2]C++ read\n[3]C write\n[4]C read\n[0]Exit\nInput Number:";
         cin >> mode;
-
+        
         if(mode == 0) break; //¸õ¥X°j°é
-
+        
         switch(mode) {
             case 1: //VC++ Write File
                 outputFile.open(filePath, ios::trunc);
@@ -73,7 +73,7 @@ int main(void)
                 break;
         }
     }
-
+    
     cout << "Exit" << endl;
     system("pause");
     return 0;
