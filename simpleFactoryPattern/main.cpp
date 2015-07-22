@@ -36,16 +36,16 @@ public:
 
 int main(void) {
     int type = 0;
-
+    
     cout << "1.Green Tea" << endl;
     cout << "2.Black Tea" << endl;
     cout << "Input Type:";
     cin >> type;
-
+    
     Teapot *teapot = new Teapot();
     teapot->maketea(type)->tea();
     teapot->maketea(type)->water();
-
+    
     system("pause");
     return 0;
 }
