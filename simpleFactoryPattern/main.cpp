@@ -3,29 +3,29 @@ using namespace std;
 
 class Tea {
 public:
-    virtual void tea(){}; //©ñ?¯ù¸­
+    virtual void tea(){}; //æ”¾?èŒ¶è‘‰
     void water() {
-        cout << "¨Rªw" << endl;
+        cout << "æ²–æ³¡" << endl;
     }
 };
 
 class GreenTea : public Tea {
 public:
     void tea() {
-        cout << "©ñºñ¯ù¸­" << endl;
+        cout << "æ”¾ç¶ èŒ¶è‘‰" << endl;
     }
 };
 
 class BlackTea : public Tea {
 public:
     void tea() {
-        cout << "©ñ¬õ¯ù¸­" << endl;
+        cout << "æ”¾ç´…èŒ¶è‘‰" << endl;
     }
 };
 
 class Teapot {
 public:
-    Tea* maketea(int type) { //ªw¯ù
+    Tea* maketea(int type) { //æ³¡èŒ¶
         if(type == 1) {
             return new GreenTea();
         } else if(type == 2) {
