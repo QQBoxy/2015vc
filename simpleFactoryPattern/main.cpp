@@ -1,6 +1,32 @@
 #include <iostream>
 using namespace std;
 
+class OBJ {
+public:
+    OBJ() {
+        this->x = 10;
+    }
+    ~OBJ() {
+        
+    }
+public:
+    int x;
+};
+
+int main(void) {
+
+	OBJ Object;
+    OBJ *Pointer;
+    Pointer=&Object;
+    
+    cout << Object.x << endl;
+    cout << Pointer->x << endl;
+
+	system("pause");
+	return 0;
+}
+
+/*
 class Tea {
 public:
     virtual void tea(){}; //放?茶葉
@@ -49,3 +75,4 @@ int main(void) {
 	system("pause");
 	return 0;
 }
+*/
