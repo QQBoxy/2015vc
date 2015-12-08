@@ -1,33 +1,33 @@
 #include <iostream>
 using namespace std;
-
+/*
 class Car {
 public:
     void SpeedUp() {
-        cout << "¥[³t¤¤" << endl;
+        cout << "åŠ é€Ÿä¸­" << endl;
     }
     void SpeedDown() {
-        cout << "´î³t¤¤" << endl;
+        cout << "æ¸›é€Ÿä¸­" << endl;
     }
 };
 
-class PorscheCar : public Car { //«O®É±¶
+class PorscheCar : public Car { //ä¿æ™‚æ·
 public:
     void UseNOS() {
-        cout << "¶}±Ò´á®ð¥[³t" << endl;
+        cout << "é–‹å•Ÿæ°®æ°£åŠ é€Ÿ" << endl;
     };
 };
 
-class AmbulanceCar : public Car { //±ÏÅ@¨®
+class AmbulanceCar : public Car { //æ•‘è­·è»Š
 public:
     void UseAlarmSiren() {
-        cout << "¶}±ÒÄµ²Ã" << endl;
+        cout << "é–‹å•Ÿè­¦ç¬›" << endl;
     };
 };
 
 int main(void) {
     
-    cout << "[«O®É±¶]" << endl;
+    cout << "[ä¿æ™‚æ·]" << endl;
     PorscheCar A;
     A.SpeedUp();
     A.UseNOS();
@@ -35,7 +35,7 @@ int main(void) {
 
     cout << "====================" << endl;
     
-    cout << "[±ÏÅ@¨®]" << endl;
+    cout << "[æ•‘è­·è»Š]" << endl;
     AmbulanceCar B;
     B.SpeedUp();
     B.UseAlarmSiren();
@@ -44,8 +44,8 @@ int main(void) {
     system("pause");
     return 0;
 }
+*/
 
-/*
 class ReplaceAction {
 public:
     virtual void Action(){};
@@ -54,24 +54,24 @@ public:
 class Common {
 public:
     void SpeedUp() {
-        cout << "¥[³t¤¤" << endl;
+        cout << "åŠ é€Ÿä¸­" << endl;
     }
     void SpeedDown() {
-        cout << "´î³t¤¤" << endl;
+        cout << "æ¸›é€Ÿä¸­" << endl;
     }
 };
 
 class UseNOS : public ReplaceAction {
 public:
 	void Action() {
-        cout << "¶}±Ò´á®ð¥[³t" << endl;
+        cout << "é–‹å•Ÿæ°®æ°£åŠ é€Ÿ" << endl;
     }
 };
 
 class UseAlarmSiren : public ReplaceAction {
 public:
 	void Action() {
-        cout << "¶}±ÒÄµ²Ã" << endl;
+        cout << "é–‹å•Ÿè­¦ç¬›" << endl;
     }
 };
 
@@ -97,7 +97,7 @@ public:
 
 int main(void) {
 
-    cout << "[«O®É±¶]" << endl;
+    cout << "[ä¿æ™‚æ·]" << endl;
     Car PorscheCar(1);
     PorscheCar.SpeedUp();
     PorscheCar.Action();
@@ -105,7 +105,7 @@ int main(void) {
 
     cout << "====================" << endl;
     
-    cout << "[±ÏÅ@¨®]" << endl;
+    cout << "[æ•‘è­·è»Š]" << endl;
     Car AmbulanceCar(2);
     AmbulanceCar.SpeedUp();
     AmbulanceCar.Action();
@@ -114,4 +114,3 @@ int main(void) {
     system("pause");
     return 0;
 }
-*/
